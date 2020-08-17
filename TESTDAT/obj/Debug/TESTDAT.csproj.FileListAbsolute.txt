@@ -1,0 +1,7 @@
+C:\Users\Administrator\Desktop\TESTDAT\TESTDAT\bin\Debug\TESTDAT.exe.config
+C:\Users\Administrator\Desktop\TESTDAT\TESTDAT\bin\Debug\TESTDAT.exe
+C:\Users\Administrator\Desktop\TESTDAT\TESTDAT\bin\Debug\TESTDAT.pdb
+C:\Users\Administrator\Desktop\TESTDAT\TESTDAT\obj\Debug\TESTDAT.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\TESTDAT\TESTDAT\obj\Debug\TESTDAT.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\TESTDAT\TESTDAT\obj\Debug\TESTDAT.exe
+C:\Users\Administrator\Desktop\TESTDAT\TESTDAT\obj\Debug\TESTDAT.pdb
