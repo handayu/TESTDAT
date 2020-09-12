@@ -70,10 +70,13 @@ namespace TESTDAT
                 byte[] conCode = tt.Skip(i + 4).Take(4).ToArray();
                 float conCodeFloat = BytesToFloat(conCode);
 
+                byte[] conCodeInfo = tt.Skip(i + 8).Take(2).ToArray();
+                UInt16 conCodeInfoStr = BytesToInt16(conCodeInfo);//这里相当重要
+
                 byte[] conIns = tt.Skip(i + 53).Take(28).ToArray();
                 string conInsStr = BytesToString(conIns);
 
-                Console.WriteLine(conCodeFloat.ToString() + " " + conInsStr /*+ " " + conNumStr*/);
+                Console.WriteLine(conCodeFloat.ToString() + " " + conInsStr + " " + conCodeInfoStr.ToString());
             }
         }
 
@@ -104,6 +107,11 @@ namespace TESTDAT
             return BitConverter.ToInt32(bs, 0);
         }
 
+        public static UInt16 BytesToInt16(byte[] bs)
+        {
+            return BitConverter.ToUInt16(bs, 0);
+        }
+
         public static float BytesToFloat(byte[] bs)
         {
             return BitConverter.ToSingle(bs, 0);
@@ -115,7 +123,7 @@ namespace TESTDAT
             return str;
         }
 
-        public static string BytesToString2312(byte[] bs)
+        public static string BytesToStringUniCode(byte[] bs)
         {
             string str = Encoding.GetEncoding("GB2312").GetString(bs);
             return str;
